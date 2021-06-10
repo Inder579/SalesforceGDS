@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="#C0C0C0">
+<h1>
+GDS Calculation is in progress.</h1>
+
+<button onclick="alertFunction()" name ="alert"></button>
+<p id ="msg"> 
+</p>
+<script>
+function alertFunction() {
+ var txt;
+ if (confirm("Please click on 'OK' if you would like to proceed with automation" +
+		 "\n" +
+		 "\nOR" +
+		 "\n" +
+		 "\nPress 'Cancel' to exit ")) {
+ 
+ txt = "You pressed OK!"
+
+} else {
+
+txt = "You pressed CANCEL!"
+ }
+ document.getElementById("msg").innerHTML = txt;
+}
+</script>
+</body>
+</html>
